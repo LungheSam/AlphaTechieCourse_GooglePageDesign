@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    padding:20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.google-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.google-name img{
+    height: 400px;
+    width: 800px;
+    object-fit: contain;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    scale: 0.9;
+}
+.btn{
+    padding:0.5rem 1.5rem;
+    margin-left: 10px;
+    outline: none;
+    border:none;
+    background-color: rgb(211, 211, 211);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-bar{
+    background-color:white;
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px 6px rgb(204, 204, 204);
+    margin-bottom: 30px;
+    padding: 1rem 2rem;
+}
+.search-bar input {
+    outline: none;
+    border: none;
+    width:600px;
+    height: 100%;
+    font-size: 1.5rem;
+    margin-inline: 30px;
+}
+
+.icon1{
+    height:50px;
+    width:50px;
+    object-fit: contain;
+    cursor: pointer;
+}
+@media screen and (max-width:860px){
+    body{
+        scale: 0.9;
+    }
+}
+@media screen and (max-width:786px){
+    body{
+        scale: 0.8;
+    }
+    .google-name img,.search-bar{
+        scale:0.7;
+    }
+    
+}
